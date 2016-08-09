@@ -194,7 +194,7 @@ func writeElement(w io.Writer, element interface{}) error {
 			return err
 		}
 	case []byte:
-		// Enforce the maxmium length of all slices used in the wire
+		// Enforce the maximum length of all slices used in the wire
 		// protocol.
 		sliceLength := len(e)
 		if sliceLength > MaxSliceLength {
